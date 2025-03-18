@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+class LAppBar extends StatelessWidget {
+  const LAppBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Easy Flutter App",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        backgroundColor: Colors.blue,
+        leading: Icon(Icons.menu, size: 30, color: Colors.white),
+        actions: [Icon(Icons.search, size: 30, color: Colors.white)],
+      ),
+      body: Center(child: Text("Hello World!", style: TextStyle(fontSize: 18))),
+    );
+  }
+}
